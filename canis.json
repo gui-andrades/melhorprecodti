@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "Meu Canino Feliz",
+        "distancia": 2,
+        "precoPequeno": 20,
+        "precoGrande": 40,
+        "precoPequenoFds": 24,
+        "precoGrandeFds": 48
+    },
+    {
+        "nome": "Vai Rex",
+        "distancia": 1.7,
+        "precoPequeno": 15,
+        "precoGrande": 50,
+        "precoPequenoFds": 20,
+        "precoGrandeFds": 55
+    },
+    {
+        "nome": "ChowChawgas",
+        "distancia": 0.8,
+        "precoPequeno": 30,
+        "precoGrande": 45,
+        "precoPequenoFds": 30,
+        "precoGrandeFds": 45
+    }
+]

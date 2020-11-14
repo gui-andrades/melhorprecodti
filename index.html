@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melhor Preço</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="melhorpreco.js"></script>
+    <title>Document</title>
+  </head>
+  <body onload="carregaXmlHttp()">
+    <div class="container" id="container">
+      <div class="titulo">Calculadora de preço de petshops</div><br>
+      <div class="inputs">
+        <div class="data">Data:<br><input type="date" name="data" id="data"/><br></div>
+        <div class="qtdCacPeq">
+          Quantidade de cachorros pequenos:<br><input type="number" name="qtdCacPeq" id="qtdCacPeq" placeholder="Cachorros pequenos"/><br>
+        </div>
+        <div class="qtdCacGra">
+          Quantidade de cachorros grandes:<br><input type="number" name="qtdCacGra" id="qtdCacGra" placeholder="Cachorros grandes"/><br>
+        </div>
+      </div>
+      <button type="submit" onclick="conferir()">Conferir</button><br>
+      <div id="resultado"></div>
+    </div>
+  </body>
+</html>

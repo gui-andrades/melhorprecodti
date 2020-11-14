@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-family: Arial;
+}
+
+body{
+    background-color: rgb(100,150,255);
+    background-size: 150px;
+    background-blend-mode: overlay;
+    text-align: center;
+    overflow: hidden;
+}
+
+body::after{
+    content: "";
+    transform: rotate(30deg);
+    background-image: url(pata.png);
+    background-size: 550px;
+    background-position: center;
+    opacity: .15;
+    top: -50%;
+    left: -50%;
+    bottom: -50%;
+    right: -50%;
+    position: absolute;
+    z-index: -1;
+}
+
+.container{
+    width: clamp(300px, 70%, 1000px);
+    height: clamp(200px, 50%, 900px);
+    padding: 3.5rem;
+    margin: 100px auto;
+    border-radius: 2rem;
+    background-color: rgb(50, 50, 180);
+    color: white;
+    box-shadow: 5px 4px rgb(10,10,80);
+}
+
+.container .titulo{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container *:focus{
+    outline: none;
+}
+
+.container .inputs{
+    display: grid;
+
+}
+
+.container .inputs .data{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.container .inputs .qtdCacPeq{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.container .inputs .qtdCacGra{
+    grid-column-start: 4;
+    grid-column-end: 6;
+}
+
+.container input{
+    background-color: rgb(170,200,255);
+    min-height: 30px;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: none;
+    box-shadow: inset 3px 2px rgb(30,30,100);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.container input::placeholder{
+    color: rgb(20,20,20);
+}
+
+.container>button{
+    background-color: rgb(170,200,255);
+    min-height: 40px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    border: none;
+    box-shadow: inset 3px 2px rgb(30,30,100);
+    margin-bottom: 20px;
+}
+
+.container>button:active{
+    background-color: rgb(130,150,255);
+    box-shadow: inset 5px 4px rgb(15,15,80);
+}
+
+#resultado{
+    font-weight: bold;
+    font-size: 2rem;
+}
